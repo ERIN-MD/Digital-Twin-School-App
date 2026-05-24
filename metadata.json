@@ -1,0 +1,6 @@
+{
+  "name": "منصة المدرسة الإلكترونية",
+  "description": "منصة مدرسة إلكترونية متكاملة مع توأم رقمي تفاعلي لإدارة الصفوف، الطلاب، والجدول المدرسي",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

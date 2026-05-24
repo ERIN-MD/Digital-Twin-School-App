@@ -1,0 +1,110 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <!-- Dark Futuristic Background Shield -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M256,40 C140,40 100,80 100,220 C100,360 200,440 256,472 C312,440 412,360 412,220 C412,80 372,40 256,40 Z"/>
+
+    <!-- Glowing Digital Grid Layout (Vertical/Horizontal Lines) -->
+    <path
+        android:strokeColor="#1E293B"
+        android:strokeWidth="2"
+        android:pathData="M150,100 L150,400 M200,80 L200,440 M256,40 L256,472 M312,80 L312,440 M362,100 L362,400"/>
+    <path
+        android:strokeColor="#1E293B"
+        android:strokeWidth="2"
+        android:pathData="M100,150 L412,150 M100,220 L412,220 M100,290 L412,290 M100,360 L412,360"/>
+
+    <!-- Inner Metallic Core Shield Outline -->
+    <path
+        android:strokeWidth="6"
+        android:strokeColor="#0D9488"
+        android:pathData="M256,56 C155,56 120,92 120,220 C120,345 208,418 256,448 C304,418 392,345 392,220 C392,92 357,56 256,56 Z"/>
+
+    <!-- Left Accent Ring/Circuit Line -->
+    <path
+        android:strokeWidth="4"
+        android:strokeColor="#10B981"
+        android:pathData="M160,220 C160,150 200,120 256,120"
+        android:strokeLineCap="round"/>
+
+    <!-- Right Accent Ring/Circuit Line -->
+    <path
+        android:strokeWidth="4"
+        android:strokeColor="#6366F1"
+        android:pathData="M352,220 C352,290 312,320 256,320"
+        android:strokeLineCap="round"/>
+
+    <!-- Futurist Digital Twin School Structure (3D Block Pillars) -->
+    <!-- Left Wing -->
+    <path
+        android:fillColor="#0D9488"
+        android:pathData="M180,240 L220,240 L220,300 L180,300 Z"/>
+    <!-- Right Wing -->
+    <path
+        android:fillColor="#0D9488"
+        android:pathData="M292,240 L332,240 L332,300 L292,300 Z"/>
+    <!-- Center Tower / Gateway -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M236,200 L276,200 L276,300 L236,300 Z"/>
+    <!-- Triangular Roof of Center Tower -->
+    <path
+        android:fillColor="#4F46E5"
+        android:pathData="M226,200 L256,160 L286,200 Z"/>
+
+    <!-- Circuit Nodes (Glow Dots) -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M150,150 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0"/>
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M362,150 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0"/>
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M256,448 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0"/>
+    <path
+        android:fillColor="#0D9488"
+        android:pathData="M256,120 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0"/>
+    <path
+        android:fillColor="#F43F5E"
+        android:pathData="M120,220 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0"/>
+    <path
+        android:fillColor="#F43F5E"
+        android:pathData="M392,220 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0"/>
+
+    <!-- Academy Mortarboard / Hat Silhouetted in Core High-Light -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M256,225 L216,210 L256,195 L296,210 Z"/>
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M236,220 L236,240 C236,250 276,250 276,240 L276,220 Z"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M280,215 L290,230"
+        android:strokeLineCap="round"/>
+
+    <!-- Holographic Digital Horizon Rings -->
+    <path
+        android:strokeWidth="3"
+        android:strokeColor="#06B6D4"
+        android:pathData="M170,350 L342,350"
+        android:strokeLineJoin="round"/>
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#06B6D4"
+        android:pathData="M190,365 L322,365"
+        android:strokeLineJoin="round"/>
+    <path
+        android:strokeWidth="1"
+        android:strokeColor="#06B6D4"
+        android:pathData="M210,380 L302,380"
+        android:strokeLineJoin="round"/>
+
+</vector>
