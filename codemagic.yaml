@@ -4,8 +4,9 @@ workflows:
     environment:
       java: 17
     scripts:
-      - name: Generate Missing Keystore
+      - name: Fix Kotlin Error & Generate Keystore
         script: |
+          echo "android.disallowKotlinSourceSets=false" >> gradle.properties
           keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "C=EG, O=TeamZeta, CN=DigitalTwin"
       
       - name: Upgrade Gradle Version to 9.3.1
