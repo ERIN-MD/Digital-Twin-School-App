@@ -1,0 +1,14 @@
+workflows:
+  android-build:
+    name: Build Digital Twin School APK
+    environment:
+      java: 17
+    scripts:
+      - name: Generate Missing Keystore
+        script: |
+          keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "C=EG, O=TeamZeta, CN=DigitalTwin"
+      - name: Build Android APK
+        script: |
+          gradle assembleDebug --no-daemon
+    artifacts:
+      - app/build/outputs/apk/**/*.apk
