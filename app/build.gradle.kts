@@ -48,11 +48,6 @@ android {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
   }
-  
-  // 🟢 إضافة هذا الجزء لضمان توافق لغة كوتلن مع جافا 17
-  kotlinOptions {
-    jvmTarget = "17"
-  }
 
   buildFeatures {
     compose = true
