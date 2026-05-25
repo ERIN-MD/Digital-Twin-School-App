@@ -7,8 +7,15 @@ workflows:
       - name: Generate Missing Keystore
         script: |
           keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "C=EG, O=TeamZeta, CN=DigitalTwin"
+      
+      - name: Upgrade Gradle Version to 9.3.1
+        script: |
+          gradle wrapper --gradle-version 9.3.1
+          chmod +x gradlew
+          
       - name: Build Android APK
         script: |
-          gradle assembleDebug --no-daemon
+          ./gradlew assembleDebug --no-daemon
+          
     artifacts:
       - app/build/outputs/apk/**/*.apk
