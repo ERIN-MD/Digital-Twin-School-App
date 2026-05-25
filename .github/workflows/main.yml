@@ -15,8 +15,11 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
+    - name: Decode Debug Keystore
+      run: base64 --decode debug.keystore.base64 > debug.keystore
+        
     - name: Build APK with Gradle
-      run: gradle assembleDebug --no-daemon
+      run: gradle clean assembleDebug -Dorg.gradle.jvmargs="-Xmx3g" --no-daemon
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
