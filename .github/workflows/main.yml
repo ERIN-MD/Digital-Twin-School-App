@@ -1,8 +1,11 @@
 name: Build APK
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch: # السطر ده هيسمحلك تشغل الـ Build بضغطة زرار بنفسك
+    branches: [ main, master ]
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
@@ -17,14 +20,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
-    - name: Setup Gradle
-      uses: gradle/actions/setup-gradle@v3
-      
     - name: Build APK with Gradle
       run: gradle assembleDebug
       
     - name: Upload APK
       uses: actions/upload-artifact@v4
+      if: always()
       with:
         name: app-debug-apk
         path: app/build/outputs/apk/debug/*.apk
