@@ -28,12 +28,7 @@ android {
       keyAlias = "upload"
       keyPassword = System.getenv("KEY_PASSWORD")
     }
-    create("debugConfig") {
-      storeFile = file("${rootDir}/debug.keystore")
-      storePassword = "android"
-      keyAlias = "androiddebugkey"
-      keyPassword = "android"
-    }
+    // 🟢 تم حذف إعدادات debugConfig من هنا 
   }
 
   buildTypes {
@@ -44,7 +39,7 @@ android {
       signingConfig = signingConfigs.getByName("release")
     }
     debug {
-      signingConfig = signingConfigs.getByName("debugConfig")
+      // 🟢 تم مسح السطر الخاص بالمفتاح المفقود عشان يشتغل بالإعدادات الافتراضية
     }
   }
   
